@@ -1,0 +1,302 @@
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Temp styles
+ * ---------------------------------------------------------------------
+ */
+ .navbar .navbar-brand, .navbar-toggle {
+opacity: 0.2;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #ccc;
+}
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Typography
+ * ---------------------------------------------------------------------
+ */
+.navbar .navbar-brand, h1, h2, h3, h4, h5, h6 {
+font-family: "Roboto";
+src: url("fonts/roboto/Roboto-Bold.eot");
+src: url("Roboto-Bold.eot?#iefix") format("embedded-opentype"), 
+url("Roboto-Bold.woff2") format("woff2"), 
+url("Roboto-Bold.woff") format("woff"), 
+url("Roboto-Bold.ttf") format("truetype");
+font-weight: 700;
+}
+
+.jumbotron p {
+font-family: "Roboto";
+src: local(Roboto Light), url("Roboto-Light.eot");
+src: url("Roboto-Light.eot?#iefix") format("embedded-opentype"),
+url("Roboto-Light.woff2") format("woff2"), 
+url("Roboto-Light.woff") format("woff"), 
+url("Roboto-Light.ttf") format("truetype");
+font-weight: 300;
+}
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Universal
+ * ---------------------------------------------------------------------
+ */
+html {
+min-height: 100%;
+position: relative;  
+}
+body {
+margin-bottom: 60px;
+padding-top: 50px;
+}
+@media(max-width: 767px) {
+    body {
+    margin-bottom: 360px;
+    }
+}
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Navbar
+ * ---------------------------------------------------------------------
+ */
+.navbar {
+background-color: #fff;
+}
+.navbar-toggle {
+border: none;
+left: 15px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: transparent;
+}
+.container > .navbar-collapse {
+overflow-x: hidden;
+padding: 0;
+}
+.navbar-nav {
+margin: 0;
+padding: 0;
+}
+.nav.navbar-nav.col-lg-4 li {
+text-align: center;
+width: 33%;
+}
+.nav.navbar-nav.col-lg-4 li ul li {
+width: 100%;
+}
+.dropdown-menu {
+margin-left: -17px;
+}
+@media(max-width: 767px) {
+    .navbar-collapse {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+    }
+    .navbar ul li ul li a {
+    padding-left: 15px !important;
+    }
+}
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Nav bar Hamburger menu icon
+ * ---------------------------------------------------------------------
+ */
+.hamburger-icon {
+cursor: pointer;
+font-size: 0;
+height: 32px;
+margin: 5px 10px 0 0;
+overflow: hidden;
+padding: 0;    
+text-indent: -9999px;
+-webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+width: 32px;
+}
+.hamburger-icon:focus {
+outline: none;
+}
+.hamburger-icon span, .hamburger-icon span::before, .hamburger-icon span::after {
+display: block;
+height: 1px;
+position: absolute;
+}
+.hamburger-icon span {
+left: 5%;
+top: 18px;
+width: 90%;
+}
+.hamburger-icon span::before, .hamburger-icon span::after {
+content: "";
+width: 100%;
+}
+.hamburger-icon span::before {
+top: -8px;
+}
+.hamburger-icon span::after {
+bottom: -8px;
+}
+.hamburger-icon-slam span::before, .hamburger-icon-slam span::after {
+-webkit-transition-duration: 0.3s, 0.3s;
+        transition-duration: 0.3s, 0.3s;
+     -webkit-transition-delay: 0.3s, 0s;
+             transition-delay: 0.3s, 0s;
+}
+.hamburger-icon-slam span::before {
+-webkit-transition-property: top, -webkit-transform;
+                transition-property: top, transform;
+}
+.hamburger-icon-slam span::after {
+-webkit-transition-property: bottom, -webkit-transform;
+                transition-property: bottom, transform;
+}
+.hamburger-icon-slam.is-active span::before { 
+opacity: 1 !important;
+top: 0;
+-webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.hamburger-icon-slam.is-active span::after {
+bottom: 0;
+-webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+.hamburger-icon-slam.is-active span::before,
+.hamburger-icon-slam.is-active span::after {
+-webkit-transition-delay: 0s, 0.3s;
+        transition-delay: 0s, 0.3s;
+}
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Jumbotron
+ * ---------------------------------------------------------------------
+ */
+.jumbotron {
+background: #f5f5f5;
+border-bottom: 1px solid #e7e7e7;
+color: #ccc;
+margin-bottom: 50px;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.jumbotron h1 {
+margin-bottom: 0;
+}
+@media(max-width: 767px) {
+    .jumbotron {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+    .jumbotron h1 {
+    font-size: 24px;
+    }
+    .jumbotron p {
+    font-size: 13px;
+    }
+}
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Pre Footer
+ * ---------------------------------------------------------------------
+ */
+.prefooter {
+border-top: 1px solid #efefef;
+bottom: 60px;
+height: auto;
+padding-top: 18px;
+padding-bottom: 18px;
+position: absolute;
+width: 100%; 
+}
+.prefooter .col-lg-2 {
+background-color: #f5f5f5;
+border: 1px solid #fff;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.prefooter .col-lg-2 img.placeholder {
+height: 48px;
+margin: 0 auto;
+opacity: 0.1;
+width: auto;
+}
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Footer
+ * ---------------------------------------------------------------------
+ */
+.footer {
+background-color: #f5f5f5;
+bottom: 0;
+color: #ccc;
+height: 60px;
+padding-top: 18px;
+position: absolute;
+width: 100%;  
+}
+/* 
+ * ---------------------------------------------------------------------
+ * Angular Route Template v-1.0
+ * Buttons
+ * ---------------------------------------------------------------------
+ */
+.btn {
+background-image: none;
+border: 1px solid transparent;
+border-radius: 0px;
+cursor: pointer;
+display: inline-block;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.42857143;
+margin-bottom: 0;
+padding: 6px 12px;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+-ms-touch-action: manipulation;
+	touch-action: manipulation;
+-webkit-user-select: none;
+   -moz-user-select: none;
+	-ms-user-select: none;
+		user-select: none;
+}
+.btn-default {
+background-color: transparent;
+border-color: #ccc;
+color: #ccc;
+}
+.btn-default:focus {
+background-color: transparent;
+border-color: #ccc;
+color: #ccc;
+}
+.btn-default:hover {
+color: #ccc;
+background-color: transparent;
+border-color: #ccc;
+}
+.btn-default:active {
+background-color: transparent;
+border-color: #ccc;
+color: #ccc;
+}
+.btn-default:active:hover,
+.btn-default:active:focus {
+background-color: transparent;
+border-color: #ccc;
+color: #ccc;
+}
+.btn-default:active {
+background-image: none;
+}

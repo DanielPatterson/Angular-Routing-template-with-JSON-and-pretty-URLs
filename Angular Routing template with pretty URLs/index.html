@@ -1,0 +1,81 @@
+<!doctype html>
+<html ng-app="app" ng-controller="appCtrl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ seo.pageTitle }}</title>
+
+    <meta name="description" content="{{ seo.metaDescription }}">
+	<meta name="author" content="{{ seo.metaAuthor }}">
+
+	<link href="dist/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
+	<link href="dist/bootstrap-3.3.7/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	
+	<link href="dist/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="app/fonts/roboto/roboto.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	/* Sticky footer styles
+	-------------------------------------------------- */
+	html {
+	position: relative;
+	min-height: 100%;
+	}
+	body {
+	margin-bottom: 60px;
+	}
+	.footer {
+	line-height: 60px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #f5f5f5;
+	}
+	/* template build styles
+	-------------------------------------------------- */
+	body {
+	padding-top: 60px;
+	}
+	.navbar-default .navbar-brand, h1 {
+	font-family: "Roboto";
+    font-weight: 700;
+	}
+	h1 {
+	font-size: 28px;
+	}
+	</style>
+
+</head>
+<body>
+
+<div ng-include src="getGlobalcomponentA()"></div>
+
+<div ng-view></div>
+
+<div ng-include src="getGlobalcomponentZ()"></div>
+</body>
+</html>
+<script src="dist/bootstrap-3.3.7/js/jquery.min.js"></script>
+<script src="dist/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="dist/bootstrap-3.3.7/js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="dist/angular-1.2.0/angular.min.js"></script>
+<script src="dist/angular-1.2.0/angular-route.min.js"></script>
+<script src="dist/angular-1.2.0/angular-resource.min.js"></script>
+
+<script src="app/js/app.js"></script>
+<script src="app/js/controllers.js"></script>
+<script src="app/js/services.js"></script>
+
+<script>
+	window.prerenderReady = false;
+</script>
