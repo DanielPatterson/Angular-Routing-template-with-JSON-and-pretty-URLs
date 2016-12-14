@@ -1,0 +1,6 @@
+{
+	"data": [
+		{"heading": "Route 2"},
+		{"paragraph": "Notice how the URL doesn't change when the views change and a the page title in the browser tab also changes per view change"}
+	]
+}
